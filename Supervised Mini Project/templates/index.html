@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Performance Predictor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>🎓 Predict Student Result</h2>
+        <form action="/predict" method="post">
+            <input type="number" name="gender" placeholder="Gender (0 = female, 1 = male)" required><br>
+            <input type="number" name="race" placeholder="Race (0–4)" required><br>
+            <input type="number" name="parental_education" placeholder="Parental Education (0–5)" required><br>
+            <input type="number" name="lunch" placeholder="Lunch (0 = free/reduced, 1 = standard)" required><br>
+            <input type="number" name="prep_course" placeholder="Test Prep Course (0 = none, 1 = completed)" required><br>
+            <button type="submit">Predict</button>
+        </form>
+
+        {% if prediction_text %}
+            <h3>Prediction: {{ prediction_text }}</h3>
+        {% endif %}
+    </div>
+</body>
+</html>
+
