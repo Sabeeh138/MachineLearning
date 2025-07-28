@@ -42,14 +42,7 @@ Once clustering is complete, the app provides:
 
 ---
 
-## 🧪 Perfect For:
 
-- Marketers doing customer profiling  
-- Businesses targeting promotions  
-- Data scientists prototyping ML tools  
-- Students learning unsupervised learning the fun way  
-
----
 
 ## 📸 App Preview
 
